@@ -2,9 +2,9 @@ package week2_homework_tasks1;
 
 public class Vector3D {
 
-    private double x;
-    private double y;
-    private double z;
+    private final double x;
+    private final double y;
+    private final double z;
 
     public Vector3D(double x, double y, double z) {
         this.x = x;
@@ -58,6 +58,6 @@ public class Vector3D {
 
     @Override
     public String toString() {
-        return String.format("<%d, %d, %d>", x, y, z);
+        return String.format("<%f, %f, %f>", x, y, z);
     }
 }
